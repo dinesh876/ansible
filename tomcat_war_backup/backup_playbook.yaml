@@ -1,0 +1,8 @@
+---
+-
+  hosts: api_server
+  remote_user : test
+  roles:
+    - backup
+      
+...

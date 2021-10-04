@@ -1,0 +1,5 @@
+source_path:  /opt/api/tomcat9/webapps
+destination_path: /opt/api/backup
+files:
+  - ROOT.war
+  - ROOT1.war

@@ -1,0 +1,22 @@
+---
+- name: date variable
+  set_fact:
+    mydate="{{ lookup('pipe','date +%Y%m%d%H%M%S')}}"
+
+- name: Creating  Directory
+  file:
+    path: "{{ destination_path }}/backup_{{ mydate }}"
+    state: directory
+  register: dest_path
+
+- name: Copying file from soruce to destination
+  copy:
+    src: "{{ source_path }}/{{ item }}"
+    dest: "{{ dest_path.path }}/{{ item }}"
+    remote_src: True
+  with_items:
+    - "{{ files }}"
+- name: print dest value
+  debug:
+    msg: "path is {{dest_path.path}}"
+...

@@ -3,7 +3,7 @@
 -
   hosts: Webserver
   become: yes
-  remote_user: rjiocmptest
+  remote_user: test
   vars:
     username: admin
     password: adminsecret
