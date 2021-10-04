@@ -1,0 +1,5 @@
+---
+  Webserver:
+    hosts:
+      webserver1_IP:
+...

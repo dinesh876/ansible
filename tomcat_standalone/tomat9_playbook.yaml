@@ -1,0 +1,14 @@
+---
+  # This playbook to deploy standalone tomcat9
+-
+  hosts: Webserver
+  become: yes
+  remote_user: rjiocmptest
+  vars:
+    username: admin
+    password: adminsecret
+    role: "tomcat,admin,manager,manager-gui"
+  
+  roles:
+    - tomcat
+...

@@ -1,0 +1,16 @@
+tomcat_install_java: False
+tomcat_create_user : False
+
+tomcat_template_users: tomcat-users.xml
+tomcat_template_server: server.xml
+tomcat_template_service: tomcat.service.j2
+
+tomcat_user: tomcat 
+tomcat_group: tomcat
+
+tomcat_install_path: /opt
+tomcat_service_name: tomcat
+tomcat_serice_config_path: /etc/systemd/system
+
+tomcat_http_port: 8081
+tomcat_https_port: 8443
