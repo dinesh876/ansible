@@ -1,0 +1,8 @@
+---
+-
+  hosts: Web_server
+  remote_user: rjiocmptest
+  become: yes
+  roles:
+    - nginx_rev_proxy
+...

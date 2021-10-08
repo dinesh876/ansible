@@ -1,0 +1,4 @@
+ngnix_proxy_port: 8085
+ngnix_mapped_host: 10.221.86.56
+ngnix_mapped_port: 8083
+config_file_name: rev.conf
